@@ -12,7 +12,7 @@ public class DemoPowerSupply {
         ps.switchMode();
         ps.switchMode();
 
-        ps.powerSupplyOn(255);
+        ps.powerSupplyOn(220);
 
 
 

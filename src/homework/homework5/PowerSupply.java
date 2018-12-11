@@ -31,7 +31,6 @@ public class PowerSupply {
 
     public void powerSupplyOn(int input){
         if (state = checkVoltage(input)){
-            state = true;
             getinfo();
             while (state){
                 if (scan.hasNextInt()){
