@@ -33,6 +33,7 @@ public class PowerSupply {
         if (state = checkVoltage(input)){
             getinfo();
             while (state){
+                System.out.println("Enter input voltage (200-250V): ");
                 if (scan.hasNextInt()){
                     input = scan.nextInt();
                     state = checkVoltage(input);
