@@ -16,6 +16,7 @@ public class DemoFigure {
                 switch (input){
                     case 0:
                         go = false;
+                        scan.close();
                         break;
                     case 1:
                         new Circle(inputColor(), inputPerimeter()).printFigure();

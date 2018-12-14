@@ -31,7 +31,7 @@ public class CartClass {
             }
         }
         if (sum == 0) System.out.println("The cart is empty");
-        System.out.printf("\n%1$s %2$36s %3$s %4$15.2f %5$s", "|", "Total:", "|", sum, "|");
+        System.out.printf("\n%1$s %2$36s %3$s %4$10s%5$.2f %6$s", "|", "Total:", "|", "$", sum, "|");
         System.out.print("\n----------------------------------------------------------");
         System.out.println("\n" + counter + "/" + cart.length + " (" + (cart.length - counter) + " free cells left)");
         System.out.println();
