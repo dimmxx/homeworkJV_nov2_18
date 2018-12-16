@@ -99,3 +99,15 @@ https://vertex-academy.com/tutorials/ru/konstruktory-slovo-v-java/
 http://developer.alexanderklimov.ru/android/java/constructor.php
 https://dou.ua/lenta/articles/composition-vs-inheritance-in-java/
 ========================================================================================================================
+
+Lesson 7
+
+В фабрику фигур добавить родителтьский класс Shape и правильно унаследоваться от него.
+в движке создать массив Shape из 5 элементов и класть созданные объекты туда.
+Программа заканчивается при заполнении массива и выводим правильно заоверрайденные методы
+гет инфо всех фигур в массиве
+
+https://vertex-academy.com/tutorials/ru/chto-takoe-polimorfizm-java/
+https://javarush.ru/groups/posts/2028-polimorfizm-v-java-na-sobesedovanii
+https://metanit.com/java/tutorial/3.9.php
+========================================================================================================================
