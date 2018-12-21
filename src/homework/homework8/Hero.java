@@ -1,7 +1,5 @@
 package homework.homework8;
 
-import java.util.Arrays;
-
 public class Hero {
 
     private String name;
@@ -13,7 +11,7 @@ public class Hero {
     private int strike;
     private boolean heroMode;
 
-    private Item[] item = new Item[2];
+    private Item[] slots = new Item[2];
 
     public Hero(String name, int accuracy, int intel, int strength) {
         this.name = name;
@@ -21,6 +19,8 @@ public class Hero {
         this.intel = intel;
         this.strength = strength;
         this.strike = intel/3 + accuracy/2 + strength;
+        slots[0] = new Item();
+        slots[1] = new Item();
     }
 
     public String getName() {
@@ -31,20 +31,8 @@ public class Hero {
         return health;
     }
 
-    public int getAccuracy() {
-        return accuracy;
-    }
-
-    public int getIntel() {
-        return intel;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
-
-    public Item[] getItem() {
-        return item;
+    public Item[] getSlots() {
+        return slots;
     }
 
     public int getStrike() {
@@ -56,7 +44,7 @@ public class Hero {
     }
 
     public void setItem(Item item, int n) {
-        this.item[n] = item;
+        this.slots[n] = item;
     }
 
     public boolean isHeroMode() {
@@ -71,14 +59,11 @@ public class Hero {
         return strike * 2;
     }
 
-
-
-
     @Override
     public String toString() {
         return "\nHero:" + "\nname: " + name + "\nhealth: " + health + "\naccuracy: " + accuracy +
                 "\nintel: " + intel + "\nstrength: " + strength + "\nstrike: " + strike + "\nHeroMode: " +
-                heroMode + "\nItem: " + item[0].toString() + item[1].toString();
+                heroMode + "\nSlot 1: " + slots[0].toString() + "\nSlot 2: " + slots[1].toString();
     }
 
 

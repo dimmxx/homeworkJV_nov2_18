@@ -2,9 +2,12 @@ package homework.homework8;
 
 public class Item {
 
-    private String name;
-    private int strike;
-    private int defence;
+    private String name = "empty";
+    private int strike = 0;
+    private int defence = 0;
+
+    public Item(){
+    }
 
     public Item(String name, int strike, int defence){
         this.name = name;
@@ -26,8 +29,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return " " + name  +
-                ", strike - " + strike +
-                ", defence - " + defence;
+        return " " + name  + ", strike " + strike + ", defence " + defence;
     }
 }
