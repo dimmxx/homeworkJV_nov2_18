@@ -1,4 +1,4 @@
-package homework.homework9.shapes;
+package homework.homework9.shapes_v2;
 
 public class Color {
 
