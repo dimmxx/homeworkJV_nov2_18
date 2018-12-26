@@ -6,4 +6,13 @@ public class Luna extends Hero {
         super(name, accuracy, intel, strength);
     }
 
+    @Override
+    public int ultimate(){
+        return getStrike() * 2;
+    }
+
+
+
+
+
 }

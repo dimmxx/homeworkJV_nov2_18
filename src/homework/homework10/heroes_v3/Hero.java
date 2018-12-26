@@ -54,16 +54,19 @@ public abstract class Hero {
         this.heroMode = heroMode;
     }
 
-    protected int ultimate() {
-        return strike * 2;
-    }
+    public abstract int ultimate();
 
     @Override
     public String toString() {
-        return "\nHero:" + "\nname: " + name + "\nhealth: " + health + "\naccuracy: " + accuracy +
-                "\nintel: " + intel + "\nstrength: " + strength + "\nstrike: " + strike + "\nHeroMode: " +
-                heroMode + "\nSlot 1: " + slots[0].toString() + "\nSlot 2: " + slots[1].toString();
+        return "\nHero:" +
+                "\nname: " + name +
+                "\nhealth: " + health +
+                "\naccuracy: " + accuracy +
+                "\nintel: " + intel +
+                "\nstrength: " + strength +
+                "\nstrike: " + strike +
+                "\nHeroMode: " + heroMode +
+                "\nUltimate: " + ultimate() + (isHeroMode() ? " (Enabled)" : (" (Disabled)")) +
+                "\nSlot 1: " + slots[0].toString() + "\nSlot 2: " + slots[1].toString();
     }
-
-
 }

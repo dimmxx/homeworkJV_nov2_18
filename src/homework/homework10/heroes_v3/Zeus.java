@@ -5,4 +5,12 @@ public class Zeus extends Hero {
     public Zeus(String name, int accuracy, int intel, int strength) {
         super(name, accuracy, intel, strength);
     }
+
+    @Override
+    public int ultimate(){
+        return (int)(getStrike() * Math.random() * 10);
+    }
+
+
+
 }
