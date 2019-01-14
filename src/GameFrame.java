@@ -1,5 +1,3 @@
-package homework.game;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -15,19 +13,24 @@ public class GameFrame extends JFrame {
     private int yPos = screenSize.height/2 - FRAME_HEIGHT /2;
 
     public GameFrame(){
-        super("Tappy Plane");
+        super("Tappy Plane v2");
         //setBounds(xPos, yPos, FRAME_WIDTH, FRAME_HEIGHT);
-        setBounds(450, yPos, FRAME_WIDTH, FRAME_HEIGHT);
+        setBounds(xPos, yPos, FRAME_WIDTH, FRAME_HEIGHT);
 
 
-        Panel1 panel1 = new Panel1(FRAME_WIDTH, FRAME_HEIGHT);
+        PanelGame panelGame = new PanelGame (FRAME_WIDTH, FRAME_HEIGHT);
 
-        add(panel1);
+        add(panelGame);
 
         setVisible(true);
         setResizable(false);
         setDefaultCloseOperation(3);
     }
+
+
+
+
+
 
 
 

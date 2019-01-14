@@ -1,5 +1,3 @@
-package homework.game;
-
 import javax.swing.*;
 
 public class MainGame {
