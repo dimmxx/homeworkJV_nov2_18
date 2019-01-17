@@ -2,10 +2,10 @@ package homework.homework13;
 
 //implementation of ArrayList
 
-import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.*;
+import java.util.function.UnaryOperator;
 
-public class DimaCollectionArrayList {
+public class DimaCollectionArrayList  {
 
     private DogClass[] array;
     private int counter = 0;
@@ -63,10 +63,16 @@ public class DimaCollectionArrayList {
         return array[pos];
     }
 
+
     public void printOut(){
         for(int i = 0; i < counter; i++){
             System.out.println("Cell# " + i + " " + array[i].toString());
         }
+    }
+
+
+    public Object set(int i, Object o) {
+        return null;
     }
 
     public void sort(Comparator comparator){
@@ -80,6 +86,59 @@ public class DimaCollectionArrayList {
             }
         }
 
+    }
+
+    public void clear() {
+
+    }
+
+    public Iterator iterator() {
+        return new Iterator() {
+            private int currentIndex = 0;
+            @Override
+            public boolean hasNext() {
+                return currentIndex < counter && array[currentIndex] != null;
+            }
+            @Override
+            public DogClass next() {
+                return array[currentIndex++];
+            }
+        };
+    }
+
+    public boolean isEmpty() {
+        return false;
+    }
+
+
+    public boolean contains(Object o) {
+        return false;
+    }
+
+    public boolean add(Object o) {
+        return false;
+    }
+
+    public boolean remove(Object o) {
+        return false;
+    }
+
+
+    public boolean addAll(Collection collection) {
+        return false;
+    }
+
+
+    public boolean addAll(int i, Collection collection) {
+        return false;
+    }
+
+    public int indexOf(Object o) {
+        return 0;
+    }
+
+    public int lastIndexOf(Object o) {
+        return 0;
     }
 
 
