@@ -1,0 +1,20 @@
+CREATE DATABASE ALKO;
+USE ALKO;
+CREATE TABLE category
+(
+    cat_id TINYINT PRIMARY KEY AUTO_INCREMENT,
+    cat_name VARCHAR(100)
+);
+
+CREATE TABLE drinks
+(
+d_id INT PRIMARY KEY AUTO_INCREMENT,
+d_name TINYTEXT NOT NULL,
+d_degree TINYINT,
+d_category TINYINT,
+d_volume FLOAT (5, 2),
+FOREIGN KEY (d_category) REFERENCES category(cat_id)
+);
+
+INSERT INTO category (cat_name)
+VALUES ('soft drink', 'wine', 'beer', 'vodka', 'shot');
